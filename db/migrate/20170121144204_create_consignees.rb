@@ -1,6 +1,6 @@
-class CreateCompanies < ActiveRecord::Migration
+class CreateConsignees < ActiveRecord::Migration
   def change
-    create_table :companies do |t|
+    create_table :consignees do |t|
       t.string :name, null: false, unique: true
       t.string :phone, null: false
       t.string :email, null: false
