@@ -6,7 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 flash = Consignee.create(name: "Central City Imports", phone: "718-555-4242", email: "barry_allen@centralcity.com", password: "password")
-greenlantern = Consignee.create(name: "Highball Imports", phone: "650-555-1234", email: "hal_jordan@highball.com" password: "password")
+greenlantern = Consignee.create(name: "Highball Imports", phone: "650-555-1234", email: "hal_jordan@highball.com", password: "password")
 
 monty_hall = Container.create(container_number: "GLFU2814428")
 
