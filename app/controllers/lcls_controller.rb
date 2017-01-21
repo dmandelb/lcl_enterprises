@@ -28,8 +28,12 @@ class LclsController < ApplicationController
   def update
     @lcl = Lcl.find_by(id: params[:id])
     verify_authorized
-    @lcl.update(lcl_params)
-    redirect_to @lcl
+    if @lcl.update(lcl_params)
+      redirect_to @lcl
+    else
+      @errors = @lcl.errors.full_messages
+      render '_form'
+    end
   end
 
   def register
