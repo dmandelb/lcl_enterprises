@@ -1,0 +1,26 @@
+<%= form_for @consignee do |f| %>
+  <div>
+    <%= f.label "Name" %>
+    <%= f.text_field :name %>
+  </div>
+  <div>
+    <%= f.label "Phone Number" %>
+    <%= f.text_field :phone %>
+  </div>
+  <div>
+    <%= f.label "E-mail Address" %>
+    <%= f.text_field :email %>
+  </div>
+  <div>
+    <%= f.label "Password" %>
+    <%= f.password_field :password %>
+  </div>
+  <div>
+    <%= f.label "Password Confirmation" %>
+    <%= f.password_field :password_confirmation %>
+  </div>
+  <div>
+    <%= f.submit "Submit" %>
+  </div>
+<% end %>
+<%= render 'layouts/errors' %>

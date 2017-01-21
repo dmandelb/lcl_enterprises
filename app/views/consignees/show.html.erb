@@ -1,0 +1,20 @@
+<div>
+  <%= @consignee.name %>
+</div>
+<div>
+  <%= @consignee.phone %>
+</div>
+<div>
+  <%= @consignee.email %>
+</div>
+<div>
+  <%= link_to "Edit", edit_consignee_path(@consignee) %>
+</div>
+
+<% if @lcls %>
+  <ul>
+  <% @lcls.each do |cargo| %>
+    <li><%= link_to cargo.description, cargo %></li>
+  <% end %>
+  </ul>
+<% end %>

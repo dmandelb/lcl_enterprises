@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   delete '/logout' => 'sessions#logout'
   post '/lcls/register'
   resources :lcls, except: [:index, :destroy]
+  resources :consignees, only: [:new, :create, :show, :edit, :update]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
