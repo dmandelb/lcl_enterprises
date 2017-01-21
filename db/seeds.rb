@@ -14,4 +14,5 @@ lcl_car = Lcl.create(consignee_id: greenlantern.id, description: "Fancy car", de
 lcl_first_goat = Lcl.create(consignee_id: flash.id, description: "Hand-carved goat statue", destination_name: "Port of Oakland", dest_lat: 37.779237, dest_long: -122.254877)
 lcl_second_goat = Lcl.create(consignee_id: flash.id, description: "Hand-carved Charlie Brown statue", destination_name: "Port of Oakland", dest_lat: 37.779237, dest_long: -122.254877)
 
-
+# "135.84.167.194:3000/lcls/register"
+# rails server -b 135.84.167.194 -p 3000

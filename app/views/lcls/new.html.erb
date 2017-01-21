@@ -1,14 +1,5 @@
 <% if logged_in? %>
-  <%= form_for @lcl do |f| %>
-    <div>
-      <%= f.label "Description" %>
-      <%= f.text_field :description %>
-    </div>
-    <div>
-      <%= f.submit "Create" %>
-    </div>
-  <% end %>
-  <%= render 'layouts/_errors' %>
+  <%= render 'form' %>
 <% else %>
   <h2>Please <a href="/login">Log in</a></h2>
 <% end %>
