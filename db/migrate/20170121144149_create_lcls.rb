@@ -5,6 +5,7 @@ class CreateLcls < ActiveRecord::Migration
       t.integer :shipper_id, null: false
       t.integer :recipient_id, null: false
       t.string :description, null: false
+      t.string :destination_name
       t.float :dest_lat, null: false
       t.float :dest_long, null: false
 
