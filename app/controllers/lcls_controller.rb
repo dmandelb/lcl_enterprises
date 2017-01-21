@@ -1,0 +1,2 @@
+class LclsController < ApplicationController
+end
