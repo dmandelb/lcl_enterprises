@@ -1,0 +1,2 @@
+class ConsigneesController < ApplicationController
+end

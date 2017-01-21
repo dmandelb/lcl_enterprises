@@ -12,3 +12,7 @@ class CreateLcls < ActiveRecord::Migration
     end
   end
 end
+# {
+#   "container_id": "asdfao21345",
+#   "lcl_id": "3"
+# }
