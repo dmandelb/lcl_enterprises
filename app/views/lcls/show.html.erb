@@ -1,0 +1,22 @@
+<h2>Thank you, your cargo has been registered</h2>
+
+<div>
+  <p>
+    Your cargo is:
+  </p>
+  <p>
+    <%= @lcl.description %>
+  </p>
+  <p>
+    It is being shipped to:
+  </p>
+  <p>
+    <%= @lcl.destination_name %>
+  </p>
+  <p>
+    at <%= @lcl.dest_lat %>, <%= @lcl.dest_long %>
+  </p>
+  <p>
+    If any of this is incorrect, please <%= link_to "edit it", edit_lcl_path(@lcl) %> now.
+  </p>
+</div>

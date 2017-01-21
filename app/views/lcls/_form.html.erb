@@ -1,0 +1,22 @@
+<%= form_for @lcl do |f| %>
+  <div>
+    <%= f.label "Description" %>
+    <%= f.text_field :description %>
+  </div>
+  <div>
+    <%= f.label "Name of Destination Port" %>
+    <%= f.text_field :destination_name %>
+  </div>
+  <div>
+    <%= f.label "Latitude of Destination Port" %>
+    <%= f.text_field :dest_lat %>
+  </div>
+  <div>
+    <%= f.label "Longitude of Destination Port" %>
+    <%= f.text_field :dest_long %>
+  </div>
+  <div>
+    <%= f.submit "Submit" %>
+  </div>
+<% end %>
+<%= render 'layouts/errors' %>
