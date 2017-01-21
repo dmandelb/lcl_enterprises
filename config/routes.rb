@@ -4,7 +4,12 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-
+  root 'lcls#new'
+  get '/login' => 'sessions#login'
+  post '/login' => 'sessions#create'
+  delete '/logout' => 'sessions#logout'
+  post '/lcls/register'
+  resources :lcls, only: [:new, :create]
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
