@@ -37,7 +37,12 @@ class LclsController < ApplicationController
   end
 
   def register
+    lcl = Lcl.find_by(id: params[:lcl_id])
+    consignee = lcl.consignee
     # This is where the lcl will be associated with a container
+    response = Unirest.post("", 'headers' : {'accept' : 'application/json','content-type'  : 'application/json'},
+      'parameters' : {'token' : '4c6e5658457074684162456e464f5a476d55654361477a5753677373584952694e79786568776f4f676e6162', 'phone_numbers' : "347-720-9741 9176033714 9176965027"})
+    response.code
   end
 
   def arrived
