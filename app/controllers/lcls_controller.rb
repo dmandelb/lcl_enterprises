@@ -42,6 +42,7 @@ class LclsController < ApplicationController
 
   def arrived
     # This is where the consignee will be notified of arrival in port
+    # A container id will come in in the post request and all relevant LCLs will be notified
   end
 
   private
